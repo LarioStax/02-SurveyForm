@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<!-- <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</head>
+<body>
+	<header>
+		<h1 id="title">MTB Survey Form</h1>
+	</header>
+	<main>
+		<article>
+			<p id="description">We are planing to organize a couple of "MTB-Weekends" over the summer of 2018. This form will help us to determine what kind of a biker you are and assign you to specific groups of similar riding style and preferences.</p>
+
+			<form id="survey-form" method="post">
+				<section class="row">
+					<div class="labels">
+						<label for="name" id="name-label">Name:</label>
+					</div>
+					<div class="inputs">
+						<input id="name" type="text" name="name" placeholder="John Doe" required>
+					</div>
+				</section>
+
+				<section class="row">
+					<div class="labels">
+						<label for="email" id="email-label">Email:</label>
+					</div>
+					<div class="inputs">
+						<input id="email" type="email" name="email" placeholder="john.doe@mail.com" required>
+					</div>
+				</section>
+
+				<section class="row">
+					<div class="labels">
+						<label for="number" id="number-label">Age:</label>
+					</div>
+					<div class="inputs">
+						<input id="number" type="number" name="age" placeholder="7 - 99" min="7" max="99" required>
+					</div>
+				</section>
+
+				<section class="row">
+					<div class="labels">
+						<label for="sex" id="sex-label">Sex:</label>
+					</div>
+					<div class="inputs">
+						<ul id="sex">
+							<li><input type="radio" name="sex" value="male" required>Male</li>
+							<li><input type="radio" name="sex" value="female" required>Female</li>
+							<li><input type="radio" name="sex" value="other" required>Other</li>
+						</ul>
+					</div>
+
+				</section>
+
+				<section id="dropdown" class="row">
+					<div class="labels">
+						<label for="category" id="category-label">Category:</label>
+					</div>
+					<div class="inputs">
+						<select id="category" name="category" required>
+							<option value="cross">Cross Country</option>
+							<option value="trail">Trail Riding</option>
+							<option value="enduro">Enduro</option>
+							<option value="downhill">Downhill</option>
+							<option value="freeride">Freeride</option>
+						</select>
+					</div>
+
+				</section>
+
+				<section class="row">
+					<div class="labels">
+						<label for="accommodation">Preferred Accommodation:</label>
+					</div>
+					<div class="inputs">
+						<ul id="accommodation">
+							<li><input type="checkbox" name="accommodation" value="wild-camping">Wild Camping</li>
+							<li><input type="checkbox" name="accommodation" value="camping-site">Camping Site</li>
+							<li><input type="checkbox" name="accommodation" value="cabin">Cabin</li>
+							<li><input type="checkbox" name="accommodation" value="hostel">Hostel</li>
+							<li><input type="checkbox" name="accommodation" value="hotel">Hotel</li>	
+						</ul>
+					</div>
+				</section>
+
+				<section class="row">
+					<div class="labels">
+						<label for="comments">Any Comments or Suggestions?</label>
+					</div>
+					<div class="inputs">
+						<textarea id="comments" name="comments" placeholder="Enter your comment/suggestion here.."></textarea>
+					</div>
+				</section>
+
+				<button id="submit" action="submit">Submit</button>
+
+			</form>
+		</article>
+	</main>
+	<footer>
+		<hr>
+   	<p>Created by Lario <a href="https://www.larioivankovic.com/">Stax</a> Ivankovic.</p>
+	</footer>
+
+</body>
+</html>

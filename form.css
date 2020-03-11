@@ -1,0 +1,134 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1f/Norco_Range.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	text-shadow: 1px 1px rgba(0,0,0,0.8),
+				 -1px -1px rgba(0,0,0,0.8);
+}
+
+header {
+	margin: auto;
+	text-align: center;
+	color: rgb(150, 150, 150);
+	font-size: 1.5em;
+	text-shadow: 
+        -1px -1px 0px rgba(0,0,0,0.8),
+         0px -1px 0px rgba(0,0,0,0.8),
+         1px -1px 0px rgba(0,0,0,0.8),
+        -1px  0px 0px rgba(0,0,0,0.8),
+         1px  0px 0px rgba(0,0,0,0.8),
+        -1px  1px 0px rgba(0,0,0,0.8),
+         0px  1px 0px rgba(0,0,0,0.8),
+         1px  1px 0px rgba(0,0,0,0.8);
+}
+
+main {
+	margin: auto;
+	width: 60%;
+	max-width: 600px;
+	min-width: 250px;
+	background-color: rgba(150, 150, 150, 0.8);
+	padding: 20px;
+	border-radius: 25px;
+	font-size: 1.2em;
+}
+
+#description {
+	text-align: justify;
+}
+
+.row {
+	margin: auto;
+}
+
+.labels {
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	width: 40%;
+	padding: 5px;
+	transform: translateX(5%);
+
+}
+
+.inputs {
+	display: inline-block;
+	text-align: left;
+	width: 40%;
+	padding: 5px;
+	transform: translateX(5%);
+}
+
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+textarea {
+	text-align: left;
+	width: 300px;
+	height: 100px;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	background-color: rgb(80, 80, 80, 0.8);
+	color: rgb(230,230,230);
+	border: none;
+	height: 40px;
+	width: 90px;
+	font-size: 1em;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+button:hover {
+	color: white;
+	background-color: rgb(80, 80, 80, 1);
+
+}
+
+footer {
+	text-align: center;
+}
+
+hr {
+	border: 0;
+	height: 1px; 
+	width: 90%;
+	background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 0.75), rgba(200, 200, 200, 0));
+}
+
+
+
+@media (max-width: 900px) {
+	body {
+		background-image: none;
+		background-color: rgb(100,125,100);
+	}
+	textarea {
+	    width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .inputs {
+    width: 100%;
+    float: left;
+  }
+  textarea {
+    width: 90%;
+  }
+}
